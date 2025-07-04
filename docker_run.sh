@@ -20,7 +20,7 @@ docker run \
 	$user/$name:latest
 
 if command -v ufw-docker &> /dev/null; then
-    ufw-docker allow $name 25565/tcp
+    sudo ufw-docker allow $name 25565/tcp
 else
-    ufw allow $port/tcp
+    sudo ufw allow $port/tcp
 fi

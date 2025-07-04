@@ -1,4 +1,4 @@
-ARG JAVA_VERSION
+ARG JAVA_VERSION="17-slim-bullseye"
 FROM openjdk:${JAVA_VERSION}
 
 WORKDIR /app
